@@ -18,9 +18,12 @@
 // import MapLocalSearch from './search/LocalSearch.vue'
 
 import DInput from './input'
+import { DTable, DTableColumn } from './table'
 
 const components = [
-  DInput
+  DInput,
+  DTable, 
+  DTableColumn
 ];
 
 const install = function(Vue, opts = {}) {
@@ -39,7 +42,9 @@ module.exports = {
   version: '0.0.1',
   install,
   // 组件
-  DInput
+  DInput,
+  DTable,
+  DTableColumn
 }
 
 // /* istanbul ignore if */

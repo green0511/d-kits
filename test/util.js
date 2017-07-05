@@ -1,7 +1,7 @@
 import Vue from 'vue';
-// import Element from 'main/index.js';
+import DKits from '../src';
 
-Vue.use(Element);
+Vue.use(DKits);
 
 let id = 0;
 
@@ -13,6 +13,8 @@ const createElm = function() {
 
   return elm;
 };
+
+exports.createElm = createElm
 
 /**
  * 回收 vm

@@ -1,6 +1,9 @@
+<template>
+  <div></div>
+</template>
 <script>
 export default {
-  name: 'DTableColumn',
+  name: 'd-table-column',
   props: {
     prop: {
       type: String,
