@@ -16,9 +16,6 @@ getTestData().forEach(data => {
   Object.keys(data).forEach(key => testArr.push(data[key]))
 })
 
-
-
-
 describe('Table 组件', () => {
   describe('测试数据显示', () => {
 
@@ -64,10 +61,10 @@ describe('Table 组件', () => {
     });
 
     it('测试数据内容', () => {
-      const cells = [].slice.call(vm.$el.querySelectorAll('tbody td'))
+      console.log(vm.$el)
+      const cells = [].slice.call(vm.$el.querySelectorAll('tbody td div'))
         .map(node => node.textContent);
       expect(cells.join('')).to.eql(testArr.join(''));
-      // destroyVM(vm);
     });
   })
 })
