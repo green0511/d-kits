@@ -19,11 +19,16 @@
 
 import DInput from './input'
 import { DTable, DTableColumn } from './table'
+import { DSelect, DSelectOption } from './select'
 
 const components = [
   DInput,
+  // 表格
   DTable, 
-  DTableColumn
+  DTableColumn,
+  // 下拉
+  DSelect,
+  DSelectOption
 ];
 
 const install = function(Vue, opts = {}) {
@@ -44,7 +49,9 @@ module.exports = {
   // 组件
   DInput,
   DTable,
-  DTableColumn
+  DTableColumn,
+  DSelect,
+  DSelectOption
 }
 
 // /* istanbul ignore if */

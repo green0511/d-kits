@@ -61,7 +61,7 @@ describe('Table 组件', () => {
     });
 
     it('测试数据内容', () => {
-      console.log(vm.$el)
+      // console.log(vm.$el)
       const cells = [].slice.call(vm.$el.querySelectorAll('tbody td div'))
         .map(node => node.textContent);
       expect(cells.join('')).to.eql(testArr.join(''));
